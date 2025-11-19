@@ -1,0 +1,53 @@
+{
+  "name": "metrovirtual_medicos",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:unit": "vitest",
+    "test:e2e": "start-server-and-test preview http://localhost:4173 'cypress run --e2e'",
+    "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "@azure/msal-browser": "^2.35.0",
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
+    "@jbtje/vite-vue3pdf": "^0.2.0",
+    "@kyvg/vue3-notification": "^2.9.0",
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.2.3",
+    "core-js": "^3.36.1",
+    "crypto-js": "^4.2.0",
+    "dayjs": "^1.11.7",
+    "mande": "^2.0.6",
+    "pinia": "^2.0.32",
+    "popper.js": "^1.16.1",
+    "print-js": "^1.6.0",
+    "vue": "^3.2.47",
+    "vue-gtag": "^2.0.1",
+    "vue-pdf": "^4.3.0",
+    "vue-router": "^4.1.6",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/eslint-config-prettier": "^7.1.0",
+    "@vue/test-utils": "^2.3.0",
+    "eslint": "^8.34.0",
+    "eslint-plugin-vue": "^9.9.0",
+    "jsdom": "^21.1.0",
+    "prettier": "^2.8.4",
+    "start-server-and-test": "^2.0.0",
+    "vite": "^4.1.4",
+    "vitest": "^0.29.1"
+  }
+}
