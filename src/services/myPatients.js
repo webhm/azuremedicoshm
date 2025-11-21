@@ -13,7 +13,7 @@ export function getMyPatients(start, length, isResident) {
   }else{
       url = `mv/mis-pacientes?start=${start}&length=${length}`;
   }
-    console.log('url', url);
+    console.log('url changed', url);
   return patients.get(url);
 }
 export function searchMyPatients(start, length, search, isResident) {
