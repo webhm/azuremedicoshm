@@ -9,11 +9,11 @@ export function getMyPatients(start, length, isResident) {
   const patients = mande(  baseURL);
     let url;
   if(isResident){
-      url = `mis-pacientes-residentes?start=${start}&length=${length}`
+      url = `mv/mis-pacientes-residentes?start=${start}&length=${length}`
   }else{
-      url = `mis-pacientes?start=${start}&length=${length}`;
+      url = `mv/mis-pacientes?start=${start}&length=${length}`;
   }
-    console.log('url', url);
+    console.log('url changed', url);
   return patients.get(url);
 }
 export function searchMyPatients(start, length, search, isResident) {
@@ -21,9 +21,9 @@ export function searchMyPatients(start, length, search, isResident) {
     const patients = mande(  baseURL);
     let url;
     if(isResident){
-        url = `mis-pacientes-residentes?start=${start}&length=${length}&searchField=${search}`
+        url = `mv/mis-pacientes-residentes?start=${start}&length=${length}&searchField=${search}`
     }else{
-        url = `mis-pacientes?start=${start}&length=${length}&searchField=${search}`;
+        url = `mv/mis-pacientes?start=${start}&length=${length}&searchField=${search}`;
     }
     console.log('url', url);
     return patients.get(url);
