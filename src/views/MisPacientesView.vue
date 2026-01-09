@@ -225,7 +225,7 @@ onMounted(async () => {
                                   {{ dealerPatient?.DG_PRINCIPAL ? dealerPatient?.DG_PRINCIPAL : "No registrado" }}
                                 </p>
                                 <p class="text-pacientes">
-                                  <b>Fecha de Admisión:</b>
+                                  <b>Fecha de Atención:</b>
                                   {{
                                     dealerPatient?.FECHA_ADMISION ? dealerPatient?.FECHA_ADMISION + " " + dealerPatient?.HORA_ADMISION : "No registrado"
                                   }}
@@ -302,7 +302,7 @@ onMounted(async () => {
                                   {{ consultedPatient?.DG_PRINCIPAL }}
                                 </p>
                                 <p class="text-pacientes">
-                                  <b>Fecha de Admisión:</b>
+                                  <b>Fecha de Atención:</b>
                                   {{ consultedPatient?.FECHA_ADMISION }} {{ consultedPatient?.HORA_ADMISION }}
                                 </p>
                                 <p class="text-pacientes">

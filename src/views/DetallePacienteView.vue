@@ -666,7 +666,7 @@ onMounted(async () => {
             <div class="row my-2 dates-pacientes">
               <div class="col-12 col-md-5">
                 <p class="descrip-paciente">
-                  <b>NHC: </b>{{ statusPaciente?.HC ? statusPaciente?.HC : "No registrado" }}
+                  <b>NHC: </b>{{ statusPaciente?.HC_MV ?? statusPaciente?.HC ?? 'No registrado' }}
                 </p>
                 <p class="descrip-paciente">
                   <b>Diagnóstico: </b>{{ statusPaciente?.DG_PRINCIPAL ? statusPaciente?.DG_PRINCIPAL : "No registrado"
@@ -683,7 +683,7 @@ onMounted(async () => {
                   <b>Especialidad: </b>{{ statusPaciente?.ESPECIALIDAD ? statusPaciente?.ESPECIALIDAD : "No registrado"
                   }}</p>
                 <p class="descrip-paciente">
-                  <b>Admisión: </b>{{ evPaciente ? evPaciente[0] ? evPaciente[0]?.ADM : "No registrado" : "No registrado" }}</p>
+                  <b>Atención: </b>{{ evPaciente ? evPaciente[0] ? evPaciente[0]?.ADM : "No registrado" : "No registrado" }}</p>
               </div>
               <div class="col-12 col-md-3">
                 <p class="descrip-paciente">
