@@ -213,10 +213,16 @@ onMounted(async () => {
           <!--columna de iframe-->
           <div class="col-12 col-md-5 mb-md-4">
             <div class="px-2 mt-5 pt-8">
-              <iframe width="100%" height="300" src="https://www.youtube-nocookie.com/embed/t0zKd0QUxyY?si=2pyTSNZ0IWYbnuSW"
-                      title="MetroVirtual" frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen></iframe>
+              <iframe
+                width="100%"
+                height="300"
+                src="https://www.youtube-nocookie.com/embed/t0zKd0QUxyY?si=2pyTSNZ0IWYbnuSW"
+                title="MetroVirtual Médicos"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
               <p style="text-align: center;">¿Qué es MetroVirtual médicos?</p>
             </div>
           </div>
