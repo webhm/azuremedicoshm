@@ -164,6 +164,19 @@ onMounted(async () => {
             </p>
           </div>
         </div>
+        <div class=" col-6 col-md-3 d-block pb-5 " >
+          <div class="icon-img cursor-pointer"
+               @click="goToLink('https://auth.elsevier.com/ShibAuth/institutionLogin?entityID=https%3A%2F%2Fsts.windows.net%2F266e577b-cdf0-42b2-9523-4dac3f7f4bc7%2F&appReturnURL=https%3A%2F%2Fwww.clinicalkey.es%2F%23%21%2F')">
+            <div class="row d-block img-border">
+              <img class="img-icon-color" src="@/assets/clinicalkey-blanco.png"
+                   alt="clinicalkey">
+              <img class="img-icon-color color-margin" src="@/assets/clinicalkey.png" alt="clinicalkey">
+              <br>
+            </div>
+            <p class="d-block mt-3 text-icon-color">ClinicalKey
+            </p>
+          </div>
+        </div>
       </div>
       <div class="row mb-4 mb-md-2 justify-content-center  pb-5 my-2">
         <!--columna de text-->
