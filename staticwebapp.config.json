@@ -1,4 +1,7 @@
 {
+  "globalHeaders": {
+    "Set-Cookie": "HttpOnly; Secure; SameSite=Strict"
+  },
   "navigationFallback": {
     "rewrite": "index.html",
     "exclude": [
